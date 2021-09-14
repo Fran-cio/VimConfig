@@ -11,9 +11,9 @@ set showmatch
 set termguicolors
 set sw=2
 set relativenumber
-so ./.vim/plugins.vim
-so ./.vim/plugin-config.vim
-so ./.vim/maps.vim
+so ~/.config/nvim/.vim/plugins.vim
+so ~/.config/nvim/.vim/plugin-config.vim
+so ~/.config/nvim/.vim/maps.vim
 
 colorscheme gruvbox
 let g:gruvbox_contrast_dark = "hard"

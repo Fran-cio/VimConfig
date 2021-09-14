@@ -1,2 +1,2 @@
-so ./.vimrc
+so ~/.config/nvim/.vimrc
 

@@ -27,10 +27,10 @@ map <Leader>p :Files<CR>
 map <Leader>ag :Ag<CR>
 
 " tmux navigator
-nnoremap <silent> <Leader><C-h> :TmuxNavigateLeft<cr>
-nnoremap <silent> <Leader><C-j> :TmuxNavigateDown<cr>
-nnoremap <silent> <Leader><C-k> :TmuxNavigateUp<cr>
-nnoremap <silent> <Leader><C-l> :TmuxNavigateRight<cr>
+nnoremap <silent> <C-h> :TmuxNavigateLeft<cr>
+nnoremap <silent> <C-j> :TmuxNavigateDown<cr>
+nnoremap <silent> <C-k> :TmuxNavigateUp<cr>
+nnoremap <silent> <C-l> :TmuxNavigateRight<cr>
 
 " Remap keys for gotos
 nmap <silent> gd <Plug>(coc-definition)
@@ -70,6 +70,10 @@ nmap <Leader>s <Plug>(easymotion-s2)
 nnoremap <Leader>G :G<cr>
 nnoremap <Leader>gp :Gpush<cr>
 nnoremap <Leader>gl :Gpull<cr>
+
+"vimux
+nnoremap <leader>mux :vsp<cr> 
+nnoremap <leader>muxs :sp<cr> 
 
 " run current file
 nnoremap <Leader>x :!node %<cr>
@@ -116,7 +120,7 @@ function! OpenTerminal()
     startinsert!
   endif
 endfunction
-nnoremap <C-t> :call OpenTerminal()<CR>
+nnoremap <C-t> :cjall OpenTerminal()<CR>
 
 inoremap <expr> <CR> ParensIndent()
 

@@ -14,7 +14,7 @@ nnoremap <Leader>; $a;<Esc>
 
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
-nnoremap <Leader>Q :q!<CR>
+nnoremap <Leader>qq :q!<CR>
 " shorter commands
 cnoreabbrev tree NERDTreeToggle
 cnoreabbrev blame Gblame

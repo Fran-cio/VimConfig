@@ -120,7 +120,7 @@ function! OpenTerminal()
     startinsert!
   endif
 endfunction
-nnoremap <C-t> :cjall OpenTerminal()<CR>
+nnoremap <C-t> :call OpenTerminal()<CR>
 
 inoremap <expr> <CR> ParensIndent()
 

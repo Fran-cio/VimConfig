@@ -41,7 +41,7 @@ nmap <silent> gr <Plug>(coc-references)
 " Remap surround to lowercase s so it does not add an empty space
 xmap s <Plug>VSurround
 " diagnostics
-nnoremap <leader>P :let @*=expand("%")<CR>
+nnoremap <leader>P :let @+=expand("%")<CR>
 
 " tabs navigation
 map <Leader>h :tabprevious<cr>

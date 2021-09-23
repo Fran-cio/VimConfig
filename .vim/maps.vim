@@ -21,6 +21,9 @@ cnoreabbrev blame Gblame
 cnoreabbrev find NERDTreeFind
 cnoreabbrev diff Gdiff
 
+" Instalar los Plugs de Coc
+cnoreabbrev InstalarPlugsCoc CocInstall coc-jedi coc-clangd coc-git coc-java
+
 " plugs
 map <Leader>nt :NERDTreeFind<CR>
 map <Leader>p :Files<CR>

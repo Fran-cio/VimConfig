@@ -1,4 +1,4 @@
-set number
+set number                                                                   
 set mouse=a
 set numberwidth=1
 set clipboard=unnamed,unnamedplus
@@ -20,6 +20,9 @@ let g:gruvbox_contrast_dark = "hard"
 highlight Normal ctermbg=NONE
 set laststatus=2
 set noshowmode
+
+"Agrega un limitador de lineas en 80
+set colorcolumn=80
 
 au BufNewFile,BufRead *.html set filetype=htmldjango
 lua require'colorizer'.setup()

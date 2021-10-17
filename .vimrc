@@ -8,8 +8,8 @@ set showcmd
 set ruler
 set cursorline
 set encoding=utf-8
-set showmatch
 set termguicolors
+set showmatch
 set sw=2
 "Los numeritos se hacen relativos al cursor
 set relativenumber
@@ -21,6 +21,7 @@ so ~/.config/nvim/.vim/maps.vim
 "Tema
 colorscheme gruvbox
 let g:gruvbox_contrast_dark = "hard"
+set bg=dark
 highlight Normal ctermbg=NONE
 set laststatus=2
 set noshowmode

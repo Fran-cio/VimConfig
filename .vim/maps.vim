@@ -16,16 +16,16 @@ nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>qq :q!<CR>
 " shorter commands
-cnoreabbrev tree NERDTreeToggle
+cnoreabbrev tree NvimTreeFindFileToggle
 cnoreabbrev blame Gblame
-cnoreabbrev find NERDTreeFind
+cnoreabbrev find NvimTreeFind
 cnoreabbrev diff Gdiff
 
 " Instalar los Plugs de Coc
 cnoreabbrev InstalarPlugsCoc CocInstall coc-jedi coc-clangd coc-git coc-java
 
 " plugs
-map <Leader>nt :NERDTreeFind<CR>
+map <Leader>nt :NvimTreeFindFileToggle<CR>
 map <Leader>p :Files<CR>
 map <Leader>ag :Ag<CR>
 

@@ -1,5 +1,7 @@
 call plug#begin('~/.vim/plugged')
 
+lua require('plugins')
+
 " syntax
 Plug 'sheerun/vim-polyglot'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
@@ -14,7 +16,8 @@ Plug 'morhetz/gruvbox'
 Plug 'shinchu/lightline-gruvbox.vim'
 
 " Tree
-Plug 'scrooloose/nerdtree'
+Plug 'kyazdani42/nvim-web-devicons' " for file icons
+Plug 'kyazdani42/nvim-tree.lua'
 
 " typing
 Plug 'alvan/vim-closetag'

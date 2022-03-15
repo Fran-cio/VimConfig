@@ -21,7 +21,7 @@ so ~/.config/nvim/.vim/maps.vim
 "Tema
 colorscheme gruvbox
 let g:gruvbox_contrast_dark = "hard"
-set bg=dark
+set background=dark
 highlight Normal ctermbg=NONE
 set laststatus=2
 set noshowmode

@@ -57,7 +57,7 @@ end
 time([[Luarocks path setup]], false)
 time([[try_loadstring definition]], true)
 local function try_loadstring(s, component, name)
-  local success, result = pcall(loadstring(s))
+  local success, result = pcall(loadstring(s), name, _G.packer_plugins[name])
   if not success then
     vim.schedule(function()
       vim.api.nvim_notify('packer.nvim: Error running ' .. component .. ' for ' .. name .. ': ' .. result, vim.log.levels.ERROR, {})
@@ -70,7 +70,7 @@ time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   ["nvim-tree.lua"] = {
-    config = { "\27LJ\2\nò\4\0\0\t\0\25\1(6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\3\0006\3\0\0'\5\1\0B\3\2\0029\3\2\0035\5\3\0004\6\0\0=\6\4\0055\6\5\0=\6\6\0055\6\a\0005\a\b\0=\a\t\6=\6\n\0055\6\v\0004\a\0\0=\a\f\6=\6\r\0055\6\14\0004\a\0\0=\a\15\6=\6\16\0055\6\17\0004\a\0\0=\a\18\6=\6\19\0055\6\20\0005\a\21\0004\b\0\0=\b\22\a=\a\23\6=\6\24\5B\3\2\0?\3\0\0B\0\2\1K\0\1\0\tview\rmappings\tlist\1\0\1\16custom_only\1\1\0\5\vheight\3\30\nwidth\3\30\16auto_resize\1\tside\tleft\21hide_root_folder\1\ffilters\vcustom\1\0\1\rdotfiles\1\16system_open\targs\1\0\0\24update_focused_file\16ignore_list\1\0\2\venable\1\15update_cwd\1\16diagnostics\nicons\1\0\4\fwarning\bï±\thint\bïª\nerror\bï—\tinfo\bïš\1\0\1\venable\1\22update_to_buf_dir\1\0\2\14auto_open\2\venable\2\23ignore_ft_on_setup\1\0\a\15update_cwd\1\18hijack_cursor\1\16open_on_tab\1\15auto_close\2\18open_on_setup\2\17hijack_netrw\2\18disable_netrw\2\nsetup\14nvim-tree\frequire\3€€À™\4\0" },
+    config = { "\27LJ\2\nò\4\0\0\t\0\25\1(6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\3\0006\3\0\0'\5\1\0B\3\2\0029\3\2\0035\5\3\0004\6\0\0=\6\4\0055\6\5\0=\6\6\0055\6\a\0005\a\b\0=\a\t\6=\6\n\0055\6\v\0004\a\0\0=\a\f\6=\6\r\0055\6\14\0004\a\0\0=\a\15\6=\6\16\0055\6\17\0004\a\0\0=\a\18\6=\6\19\0055\6\20\0005\a\21\0004\b\0\0=\b\22\a=\a\23\6=\6\24\5B\3\2\0?\3\0\0B\0\2\1K\0\1\0\tview\rmappings\tlist\1\0\1\16custom_only\1\1\0\5\16auto_resize\1\tside\tleft\21hide_root_folder\1\vheight\3\30\nwidth\3\30\ffilters\vcustom\1\0\1\rdotfiles\1\16system_open\targs\1\0\0\24update_focused_file\16ignore_list\1\0\2\15update_cwd\1\venable\1\16diagnostics\nicons\1\0\4\tinfo\bïš\fwarning\bï±\thint\bïª\nerror\bï—\1\0\1\venable\1\22update_to_buf_dir\1\0\2\venable\2\14auto_open\2\23ignore_ft_on_setup\1\0\a\18open_on_setup\1\17hijack_netrw\2\18disable_netrw\2\15update_cwd\1\18hijack_cursor\1\16open_on_tab\2\15auto_close\2\nsetup\14nvim-tree\frequire\3€€À™\4\0" },
     loaded = true,
     path = "/home/francisco/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
     url = "https://github.com/kyazdani42/nvim-tree.lua"
@@ -90,12 +90,13 @@ _G.packer_plugins = {
 time([[Defining packer_plugins]], false)
 -- Config for: nvim-tree.lua
 time([[Config for nvim-tree.lua]], true)
-try_loadstring("\27LJ\2\nò\4\0\0\t\0\25\1(6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\3\0006\3\0\0'\5\1\0B\3\2\0029\3\2\0035\5\3\0004\6\0\0=\6\4\0055\6\5\0=\6\6\0055\6\a\0005\a\b\0=\a\t\6=\6\n\0055\6\v\0004\a\0\0=\a\f\6=\6\r\0055\6\14\0004\a\0\0=\a\15\6=\6\16\0055\6\17\0004\a\0\0=\a\18\6=\6\19\0055\6\20\0005\a\21\0004\b\0\0=\b\22\a=\a\23\6=\6\24\5B\3\2\0?\3\0\0B\0\2\1K\0\1\0\tview\rmappings\tlist\1\0\1\16custom_only\1\1\0\5\vheight\3\30\nwidth\3\30\16auto_resize\1\tside\tleft\21hide_root_folder\1\ffilters\vcustom\1\0\1\rdotfiles\1\16system_open\targs\1\0\0\24update_focused_file\16ignore_list\1\0\2\venable\1\15update_cwd\1\16diagnostics\nicons\1\0\4\fwarning\bï±\thint\bïª\nerror\bï—\tinfo\bïš\1\0\1\venable\1\22update_to_buf_dir\1\0\2\14auto_open\2\venable\2\23ignore_ft_on_setup\1\0\a\15update_cwd\1\18hijack_cursor\1\16open_on_tab\1\15auto_close\2\18open_on_setup\2\17hijack_netrw\2\18disable_netrw\2\nsetup\14nvim-tree\frequire\3€€À™\4\0", "config", "nvim-tree.lua")
+try_loadstring("\27LJ\2\nò\4\0\0\t\0\25\1(6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\3\0006\3\0\0'\5\1\0B\3\2\0029\3\2\0035\5\3\0004\6\0\0=\6\4\0055\6\5\0=\6\6\0055\6\a\0005\a\b\0=\a\t\6=\6\n\0055\6\v\0004\a\0\0=\a\f\6=\6\r\0055\6\14\0004\a\0\0=\a\15\6=\6\16\0055\6\17\0004\a\0\0=\a\18\6=\6\19\0055\6\20\0005\a\21\0004\b\0\0=\b\22\a=\a\23\6=\6\24\5B\3\2\0?\3\0\0B\0\2\1K\0\1\0\tview\rmappings\tlist\1\0\1\16custom_only\1\1\0\5\16auto_resize\1\tside\tleft\21hide_root_folder\1\vheight\3\30\nwidth\3\30\ffilters\vcustom\1\0\1\rdotfiles\1\16system_open\targs\1\0\0\24update_focused_file\16ignore_list\1\0\2\15update_cwd\1\venable\1\16diagnostics\nicons\1\0\4\tinfo\bïš\fwarning\bï±\thint\bïª\nerror\bï—\1\0\1\venable\1\22update_to_buf_dir\1\0\2\venable\2\14auto_open\2\23ignore_ft_on_setup\1\0\a\18open_on_setup\1\17hijack_netrw\2\18disable_netrw\2\15update_cwd\1\18hijack_cursor\1\16open_on_tab\2\15auto_close\2\nsetup\14nvim-tree\frequire\3€€À™\4\0", "config", "nvim-tree.lua")
 time([[Config for nvim-tree.lua]], false)
 if should_profile then save_profiles() end
 
 end)
 
 if not no_errors then
+  error_msg = error_msg:gsub('"', '\\"')
   vim.api.nvim_command('echohl ErrorMsg | echom "Error in packer_compiled: '..error_msg..'" | echom "Please check your config for correctness" | echohl None')
 end

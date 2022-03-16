@@ -5,7 +5,6 @@ packer = require 'packer'
 local use = packer.use
 packer.reset()
 
-vim.g.nvim_tree_quit_on_open = 1  
 packer.startup(function()
   use{
     'wbthomason/packer.nvim',

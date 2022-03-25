@@ -19,8 +19,8 @@ so ~/.config/nvim/.vim/plugin-config.vim
 so ~/.config/nvim/.vim/maps.vim
 
 "Tema
-colorscheme gruvbox
-let g:gruvbox_contrast_dark = "hard"
+colorscheme PaperColor 
+"let g:gruvbox_contrast_dark = "hard"
 set background=dark
 highlight Normal ctermbg=NONE
 set laststatus=2

@@ -12,8 +12,10 @@ Plug 'maximbaz/lightline-ale'
 Plug 'itchyny/lightline.vim'
 
 " Themes
-Plug 'morhetz/gruvbox'
-Plug 'shinchu/lightline-gruvbox.vim'
+Plug 'NLKNguyen/papercolor-theme'
+"Plug 'morhetz/gruvbox'
+Plug 'ClaudiaJ/lightline-molokai.vim'
+"Plug 'shinchu/lightline-gruvbox.vim'
 
 " Tree
 Plug 'kyazdani42/nvim-web-devicons' " for file icons

@@ -12,9 +12,11 @@ Plug 'maximbaz/lightline-ale'
 Plug 'itchyny/lightline.vim'
 
 " Themes
-Plug 'NLKNguyen/papercolor-theme'
+"Plug 'NLKNguyen/papercolor-theme'
 "Plug 'morhetz/gruvbox'
-Plug 'ClaudiaJ/lightline-molokai.vim'
+Plug 'lifepillar/vim-solarized8'
+Plug 'taohexxx/lightline-solarized'
+"Plug 'ClaudiaJ/lightline-molokai.vim'
 "Plug 'shinchu/lightline-gruvbox.vim'
 
 " Tree

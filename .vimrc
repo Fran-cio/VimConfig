@@ -19,9 +19,11 @@ so ~/.config/nvim/.vim/plugin-config.vim
 so ~/.config/nvim/.vim/maps.vim
 
 "Tema
-colorscheme PaperColor 
-"let g:gruvbox_contrast_dark = "hard"
+"colorscheme solarized8_high
 set background=dark
+autocmd vimenter * ++nested colorscheme solarized8_high 
+let g:solarized_visibility = "hard"
+"let g:gruvbox_contrast_dark = "hard"
 highlight Normal ctermbg=NONE
 set laststatus=2
 set noshowmode

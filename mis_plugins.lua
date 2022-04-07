@@ -2,5 +2,7 @@
 return {
   ---Mios
   {'williamboman/nvim-lsp-installer'},
+  {'junegunn/fzf.vim'}
+
 }
 -- just an example!

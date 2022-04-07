@@ -31,6 +31,8 @@ map("n", "<leader>;", "$a;<Esc>")
 map("n","<leader>>", "10<C-w>>")
 map("n","<leader><","10<C-w><")
 
+map("n","<Leader>ag",":Ag<CR>")
+
 -- faster scrolling
 map("n","<a-j>","10<C-e>")
 map("n","<a-k>","10<C-y>")

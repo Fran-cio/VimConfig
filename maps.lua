@@ -1,5 +1,3 @@
-local opt = vim.opt
-
 local utils = require "core.utils"
 
 local config = utils.load_config()
@@ -11,9 +9,6 @@ local plugin_maps = maps.plugins
 local map_lspconfig = plugin_maps.lspconfig
 -- modificaciones de las configs defaults
 map_lspconfig.set_loclist = "<leader>ll"
-
-opt.relativenumber = true
-
 
 -- MAPPINGS
 local map = require("core.utils").map

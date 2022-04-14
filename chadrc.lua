@@ -20,7 +20,7 @@ M.plugins = {
 }
 
 M.ui = {
-  theme = "solarized",
+  theme = "mountain",
 }
 
 return M

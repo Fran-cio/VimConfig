@@ -20,7 +20,7 @@ M.plugins = {
 }
 
 M.ui = {
-  theme = "mountain",
+  theme = "onedark-deep",
 }
 
 return M

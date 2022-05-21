@@ -1,34 +1,34 @@
-local utils = require "core.utils"
-
-local config = utils.load_config()
-
-local maps = config.mappings
-local plugin_maps = maps.plugins
-
--- por defecto esta asigando a q pero q es sagrado para :q asi que lo piso
-local map_lspconfig = plugin_maps.lspconfig
+local M={}
 -- modificaciones de las configs defaults
-map_lspconfig.set_loclist = "<leader>ll"
 
 -- MAPPINGS
-local map = require("core.utils").map
 
--- Local Mapping
-map("n", "<leader>cc", ":Telescope <CR>")
-map("n", "<leader>q", ":q <CR>")
-map("n", "<leader>qq", ":q! <CR>")
-map("n", "<leader>w", ":w <CR>")
+M.lspconfig = {
+  n = {
+    ["<leader>ll"] = {
+      function()
+        vim.diagnostic.setloclist()
+      end,
+      "   diagnostic setloclist",
+    }
+  }
+}
 
-map("n", "<leader>;", "$a;<Esc>")
+  M.abc ={
+    n = {
+      -- Local Mapping
+      ["<leader>cc"]  =       {":Telescope <CR>", "No se"},
+      ["<leader>q"]   =       {":q <CR>", "Bye bro"},
+      ["<leader>qq"]  =       {":q! <CR>", "posta chau"},
+      ["<leader>w"]  =       {":w <CR>", "Guardar"},
+      ["<leader>;"]  =       {"$a;<Esc>", "Poner ;"},
+      ["<leader>>"]  =       {"10<C-w>>", "Mover ventana der"},
+      ["<leader><"]  =       {"10<C-w>><", "Mover ventana izq"},
+      ["<Leader>ag"]  =       {":Ag<CR>", "Buscardor de palabra"},
+      ["<a-j>"]  =       {"10<C-e>", "Bajar pagina"},
+      ["<a-k>"]  =       {"10<C-y>", "Suber pagina"},
+    }
+  }
 
-
--- split resize
-map("n","<leader>>", "10<C-w>>")
-map("n","<leader><","10<C-w><")
-
-map("n","<Leader>ag",":Ag<CR>")
-
--- faster scrolling
-map("n","<a-j>","10<C-e>")
-map("n","<a-k>","10<C-y>")
--- NOTE: the 3t  argument in the map function is be a table i.e options but its most likely un-needed so dont worry about it
+  return M
+  -- NOTE: the 3t  argument in the map function is be a table i.e options but its most likely un-needed so dont worry about it

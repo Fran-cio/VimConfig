@@ -1,26 +1,34 @@
 local M = {}
 
+M.mappings = require("custom.maps")
+
 local userPlugins = require "custom.mis_plugins" -- path to table
 local pluginConfs = require "custom.plugins.configs"
-
 
 M.plugins = {
   install = userPlugins,
 
-  default_plugin_config_replace = {
-    nvim_treesitter = pluginConfs.treesitter,
-    nvim_tree = pluginConfs.nvimtree,
+  require "custom.mis_plugins",
+
+  override = {
+    ["nvim-treesitter/nvim-treesitter"] = pluginConfs.treesitter,
+    ["kyazdani42/nvim-tree.lua"] = pluginConfs.nvimtree,
+  },
+  options = {
+    lspconfig = {
+      setup_lspconf = "custom.plugins.lspconfig",
+    },
   },
 
-   options = {
-      lspconfig = {
-         setup_lspconf = "custom.plugins.lspconfig",
-      },
-   },
-}
+  -- ["williamboman/nvim-lsp-installer"] = {
+    --   config = function()
+      --     require "custom.plugins.lspconfig"
+      --   end,
+      -- }
+    }
 
-M.ui = {
-  theme = "onedark-deep",
-}
+    M.ui = {
+      theme = "solarized",
+    }
 
-return M
+    return M

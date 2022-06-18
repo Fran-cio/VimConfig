@@ -28,7 +28,7 @@ M.plugins = {
     }
 
     M.ui = {
-      theme = "solarized",
+      theme = "gruvbox",
     }
 
     return M

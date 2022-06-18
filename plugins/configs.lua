@@ -18,6 +18,7 @@ M.nvimtree = {
   ignore_ft_on_setup = {},
   git = {
     enable = true,
+    ignore = false
   },
 }
 

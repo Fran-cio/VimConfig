@@ -22,7 +22,7 @@ M.plugins = {
 }
 
 M.ui = {
-  theme = "gruvbox",
+  theme = "jellybeans",
 }
 
 return M

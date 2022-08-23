@@ -28,7 +28,6 @@ return {
 
       --mia
       "python-lsp-server",
-      "jedi-language-server",
       "cclang",
       -- shell
       "shfmt",

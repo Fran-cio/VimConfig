@@ -1,6 +1,6 @@
 local M = {}
 
-M.mappings = require("custom.maps")
+M.mappings = require "custom.maps"
 
 local pluginConfs = require "custom.plugins.configs"
 
@@ -18,7 +18,6 @@ M.plugins = {
       setup_lspconf = "custom.plugins.lspconfig",
     },
   },
-
 }
 
 M.ui = {

@@ -11,14 +11,14 @@ M.treesitter = {
   },
   indent = {
     enable = false, -- default is disabled anyways
-  }
+  },
 }
 
 M.nvimtree = {
   ignore_ft_on_setup = {},
   git = {
     enable = true,
-    ignore = false
+    ignore = false,
   },
 }
 

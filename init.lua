@@ -1,2 +1,2 @@
 -- MAPPINGS
-require("custom.options")
+require "custom.options"

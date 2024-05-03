@@ -15,6 +15,10 @@ return {
     'mrcjkb/haskell-tools.nvim',
     version = '^3', -- Recommended
     lazy = false, -- This plugin is already lazy
+    config = function()
+      require "custom.plugins.haskell"
+    end,
+
   },
   {
     "jose-elias-alvarez/null-ls.nvim",

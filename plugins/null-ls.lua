@@ -27,6 +27,9 @@ local sources = {
   -- Python
   b.diagnostics.flake8,
   b.formatting.autopep8,
+
+  -- haskell
+  b.formatting.fourmolu
 }
 
 null_ls.setup {

@@ -1,3 +1,4 @@
+
 local M = {}
 -- modificaciones de las configs defaults
 
@@ -27,8 +28,7 @@ M.abc = {
     ["<Leader>ag"] = { ":Ag<CR>", "Buscardor de palabra" },
     ["<a-j>"] = { "10<C-e>", "Bajar pagina" },
     ["<a-k>"] = { "10<C-y>", "Suber pagina" },
-
-    -- Easy Motion
+    --- Easy Motion
     ["<Leader>s"] = { ":HopChar2<CR>", "Encontrar por 2 caracteres" },
   },
 }

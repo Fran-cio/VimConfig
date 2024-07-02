@@ -14,6 +14,32 @@ M.lspconfig = {
 	},
 }
 
+M.search_replace = {
+  v = {
+    ["<C-r>"] = {"<CMD>SearchReplaceSingleBufferVisualSelection<CR>", "Search Replace Single Buffer Visual Selection"},
+    ["<C-s>"] = {"<CMD>SearchReplaceWithinVisualSelection<CR>", "Search Replace Within Visual Selection"},
+    ["<C-b>"] = {"<CMD>SearchReplaceWithinVisualSelectionCWord<CR>", "Search Replace Within Visual Selection CWord"},
+  },
+
+  n = {
+    ["<leader>rs"] = {"<CMD>SearchReplaceSingleBufferSelections<CR>", "Search Replace Single Buffer Selections"},
+    ["<leader>ro"] = {"<CMD>SearchReplaceSingleBufferOpen<CR>", "Search Replace Single Buffer Open"},
+    ["<leader>rw"] = {"<CMD>SearchReplaceSingleBufferCWord<CR>", "Search Replace Single Buffer CWord"},
+    ["<leader>rW"] = {"<CMD>SearchReplaceSingleBufferCWORD<CR>", "Search Replace Single Buffer CWORD"},
+    ["<leader>re"] = {"<CMD>SearchReplaceSingleBufferCExpr<CR>", "Search Replace Single Buffer CExpr"},
+    ["<leader>rf"] = {"<CMD>SearchReplaceSingleBufferCFile<CR>", "Search Replace Single Buffer CFile"},
+
+    ["<leader>rbs"] = {"<CMD>SearchReplaceMultiBufferSelections<CR>", "Search Replace Multi Buffer Selections"},
+    ["<leader>rbo"] = {"<CMD>SearchReplaceMultiBufferOpen<CR>", "Search Replace Multi Buffer Open"},
+    ["<leader>rbw"] = {"<CMD>SearchReplaceMultiBufferCWord<CR>", "Search Replace Multi Buffer CWord"},
+    ["<leader>rbW"] = {"<CMD>SearchReplaceMultiBufferCWORD<CR>", "Search Replace Multi Buffer CWORD"},
+    ["<leader>rbe"] = {"<CMD>SearchReplaceMultiBufferCExpr<CR>", "Search Replace Multi Buffer CExpr"},
+    ["<leader>rbf"] = {"<CMD>SearchReplaceMultiBufferCFile<CR>", "Search Replace Multi Buffer CFile"}
+  },
+}
+
+-- show the effects of a search / replace in a live preview window
+
 M.haskell = {
 	n = {
 		["<leader>cl"] = {

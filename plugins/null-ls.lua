@@ -28,6 +28,9 @@ local sources = {
   b.diagnostics.flake8,
   b.formatting.autopep8,
 
+  -- Typescript
+  b.formatting.prettier,
+
   -- haskell
   b.formatting.fourmolu
 }

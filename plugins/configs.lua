@@ -8,7 +8,8 @@ M.treesitter = {
     "vim",
     "c",
     "python",
-    "haskell"
+    "haskell",
+    "graphql"
   },
   indent = {
     enable = false, -- default is disabled anyways

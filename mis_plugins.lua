@@ -79,6 +79,8 @@ return {
 				-- web dev
 				"html-lsp",
 				"json-lsp",
+        "prettier",
+        "graphql-language-service-cli",
 
 				-- typescript
 				"eslint",

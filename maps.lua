@@ -201,8 +201,10 @@ M.abc = {
 		["<leader>w"] = { ":w <CR>", "Guardar" },
 		["<leader>;"] = { "$a;<Esc>", "Poner ;" },
 		["<leader> >"] = { "10<C-w>>", "Mover ventana der" },
+		["<Leader>ag"] = { ":Ag<CR>", "Buscardor de silver searcher" },
+		["<leader>rg"] = { ":Rg<CR>", "Buscardor de rit grep" },
+		["<leader>rG"] = { ":RG<CR>", "Buscardor de super rip grep" },
 		["<leader> <"] = { "10<C-w><", "Mover ventana izq" },
-		["<Leader>ag"] = { ":Ag<CR>", "Buscardor de palabra" },
 		["<a-j>"] = { "10<C-e>", "Bajar pagina" },
 		["<a-k>"] = { "10<C-y>", "Suber pagina" },
 		--- Easy Motion

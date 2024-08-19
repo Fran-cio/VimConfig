@@ -5,7 +5,7 @@ local on_init = configs.on_init
 local capabilities = configs.capabilities
 
 local lspconfig = require "lspconfig"
-local servers = { "jedi_language_server", "clangd", "tsserver" }
+local servers = { "jedi_language_server", "clangd", "tsserver", "graphql" }
 
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {

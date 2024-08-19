@@ -195,7 +195,7 @@ M.haskell = {
 M.abc = {
 	n = {
 		-- Local Mapping
-		["<leader>cc"] = { ":Telescope <CR>", "No se" },
+		["<leader>ff"] = { ":FZF<CR>", "Find Files" },
 		["<leader>q"] = { ":q <CR>", "Bye bro" },
 		["<leader>qq"] = { ":q! <CR>", "posta chau" },
 		["<leader>w"] = { ":w <CR>", "Guardar" },

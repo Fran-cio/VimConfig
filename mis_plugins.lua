@@ -5,6 +5,14 @@ return {
 	--
 	--
   {
+    lazy=false,
+    "junegunn/fzf",
+  },
+  {
+    lazy=false,
+    "junegunn/fzf.vim",
+  },
+  {
   "roobert/search-replace.nvim",
   lazy = false,
   config = function()
